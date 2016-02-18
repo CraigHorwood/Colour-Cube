@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+    <title>Colour Cube &mdash; Craig Horwood</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript">
+    function showMoreLess()
+    {
+      var info_button = document.getElementById("info_button");
+      var more_info = document.getElementById("more_info");
+      if (more_info.style.display == "none")
+      {
+        more_info.style.display = "";
+        info_button.value = "Less info";
+      }
+      else
+      {
+        more_info.style.display = "none";
+        info_button.value = "More info";
+      }
+    }
+    </script>
+    <script defer src="main.dart" type="application/dart"></script>
+    <script defer src="packages/browser/dart.js"></script>
+</head>
+<body>
+<h1>Colour Cube</h1>
+<div id="wrapper">
+<canvas id="main_canvas" width="640" height="480" align="left">
+Your browser does not support the <code>&lt;canvas&gt;</code> element.
+</canvas>
+<div id="controls">
+<p>Enter an image URL.</p>
+<input id="url_text" type="text" size="60" maxlength="200" />
+<br /><br />
+<input id="url_submit" type="button" value="Get image" /><br /><br />
+<div id="status"></div>
+<input id="info_button" type="button" value="More info" onclick="showMoreLess()" />
+<div id="more_info" style="display: none;">
+<p>
+This WebGL experiment, created with the Dart programming language,
+creates an interactive 3D representation of all the colours in a given image.
+</p>
+<p>
+For those who don't know, a digital image is made up of pixels,
+which are in turn made up of three different coloured lights:
+<b><i>red</i></b> (R), <b><i>green</i></b> (G), and <b><i>blue</i></b> (B).
+Each coloured light, or <b><i>channel</i></b>, can shine at one of 256 possible brightness levels.
+</p>
+<p>
+This experiment treats those 256 possible values for the red, green, and blue channels
+as positions in 3D space rather than brightness levels. At each position, a square in the
+corresponding colour is displayed, but only if the image you import contains that colour.
+</p>
+<p>
+This leads to some very interesting 3D shapes. Use the mouse, or touch the screen,
+to rotate around the shape.
+</p>
+</div>
+<p><b>Code: </b><a href="https://github.com/CraigHorwood/Colour-Cube">GitHub</a></p>
+</div>
+</div>
+</body>
+</html>

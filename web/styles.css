@@ -1,0 +1,37 @@
+body
+{
+  background-color: #3f3f3f;
+  color: #ffffff;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper
+{
+  text-align: left;
+  margin-left: 3%;
+  width: 100%;
+  position: relative;
+}
+#controls
+{
+  position: absolute;
+  left: 55%;
+  top: 0%;
+  right: 6%;
+}
+a, a:active
+{
+  color: #fc0;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:visited
+{
+  color: #ffc;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover
+{
+  text-decoration: underline;
+}
