@@ -6,4 +6,6 @@ The red channel is the X axis, the green channel is the Y axis, and the blue cha
 
 Renders pretty fast, even when rendering literally millions of squares. It's just GL_POINTS, so it's no surprise.
 
-Uses [cors.io](http://cors.io) for now, so you can import images from other websites. May be just a short-term solution. Either way, it works now.
+Uses [cors.io](http://cors.io) for now, so you can import images from other websites. Only sometimes works as a result.
+
+[View the app](http://www.craighorwood.com/code/cube)
